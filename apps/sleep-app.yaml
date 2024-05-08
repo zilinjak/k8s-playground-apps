@@ -7,6 +7,7 @@ spec:
   project: default
   destination:
     server: https://kubernetes.default.svc
+    namespace: apps
   source:
     repoURL: https://github.com/zilinjak/k8s-playground-apps.git
     path: helm/sleep-app
