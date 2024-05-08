@@ -16,7 +16,7 @@ spec:
         prometheus-pushgateway.enabled: false
     repoURL: https://github.com/prometheus-community/helm-charts/
     chart: prometheus-community/prometheus
-    targetRevision: HEAD
+    targetRevision: main
   syncPolicy:
     automated:
       prune: true
