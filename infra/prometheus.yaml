@@ -15,7 +15,7 @@ spec:
         prometheus-node-exporter.enabled: false
         prometheus-pushgateway.enabled: false
     repoURL: https://prometheus-community.github.io/helm-charts
-    chart: prometheus-community/prometheus
+    chart: prometheus
     targetRevision: 25.20.1 
   syncPolicy:
     automated:
