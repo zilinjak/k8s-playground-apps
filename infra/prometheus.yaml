@@ -12,8 +12,8 @@ spec:
       values: |
         alertmanager:
           enabled: true
-          service: NodePort
-          nodePort: 9093
+          service:
+            type: NodePort
         kube-state-metrics:
           enabled: true
         prometheus-pushgateway:
@@ -23,6 +23,7 @@ spec:
           enabled: true
           hostRootFsMount:
             enabled: false
+        
     repoURL: https://prometheus-community.github.io/helm-charts
     chart: prometheus
     targetRevision: 25.20.1 
