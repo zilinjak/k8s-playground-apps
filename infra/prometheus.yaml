@@ -19,7 +19,8 @@ spec:
 
         prometheus-node-exporter:
           enabled: true
-          hostRootFsMount: false
+          hostRootFsMount:
+            enabled: false
 
     repoURL: https://prometheus-community.github.io/helm-charts
     chart: prometheus
