@@ -10,12 +10,7 @@ spec:
   source:
     helm:
       values: |
-
-  # - repoURL: 'registry-1.docker.io/bitnamicharts'
-    # path: 'external-dns'
-    #helm inspect chart oci://registry-1.docker.io/bitnamicharts/external-dns
-    # targetRevision: 6.36.1
-    # chart: external-dns
+        certgen.job.ttlSecondsAfterFinished: 1
     repoURL: 'registry-1.docker.io/envoyproxy'
     chart: gateway-helm
     path: gateway-helm
