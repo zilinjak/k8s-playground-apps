@@ -9,7 +9,7 @@ spec:
     namespace: apps
   source:
     repoURL: https://github.com/zilinjak/k8s-playground-apps.git
-    path: helm/envoy-test-app.yaml
+    path: helm/envoy-test-app
     targetRevision: HEAD
   syncPolicy:
     automated:
