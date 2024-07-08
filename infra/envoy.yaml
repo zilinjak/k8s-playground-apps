@@ -10,11 +10,11 @@ spec:
   source:
     helm:
       values: |
-        certgen.job.ttlSecondsAfterFinished: 1
+        
     repoURL: 'registry-1.docker.io/envoyproxy'
     chart: gateway-helm
     path: gateway-helm
-    targetRevision: v1.0.2
+    targetRevision: v0.6.0
   syncPolicy:
     automated:
       prune: true
