@@ -14,7 +14,7 @@ spec:
     repoURL: 'registry-1.docker.io/envoyproxy'
     chart: gateway-helm
     path: gateway-helm
-    targetRevision: v0.0.0-latest
+    targetRevision: v1.0.0
   syncPolicy:
     automated:
       prune: true
