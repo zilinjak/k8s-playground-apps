@@ -13,3 +13,9 @@ data:
     {{- $userEnvoyGatewayConfig := .Values.config.envoyGateway }}
     {{- $mergedEnvoyGatewayConfig := merge $userEnvoyGatewayConfig $baseEnvoyGatewayConfig }}
     {{- toYaml $mergedEnvoyGatewayConfig | nindent 4 }}
+    admin:
+      enableDumpConfig: true
+      enablePprof: true
+      address:
+        host: 127.0.0.1
+        port: 19005
