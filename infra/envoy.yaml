@@ -6,7 +6,7 @@ spec:
   project: default
   destination:
     server: https://kubernetes.default.svc
-    namespace: envoy-gateway
+    namespace: envoy-gateway-POC
   source:
     repoURL: https://github.com/zilinjak/k8s-playground-apps.git
     path: helm/gateway-helm
