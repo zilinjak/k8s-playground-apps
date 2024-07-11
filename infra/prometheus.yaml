@@ -14,12 +14,11 @@ spec:
           enabled: true
           service:
             type: LoadBalancer
-            servicePort: 4002
+            port: 4003
         kube-state-metrics:
           enabled: true
         prometheus-pushgateway:
           enabled: true
-
         prometheus-node-exporter:
           enabled: true
           hostRootFsMount:
