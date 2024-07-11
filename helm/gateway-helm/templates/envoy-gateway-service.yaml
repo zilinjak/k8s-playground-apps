@@ -12,5 +12,4 @@ spec:
   {{- include "eg.selectorLabels" . | nindent 4 }}
   ports:
   {{- .Values.deployment.ports | toYaml | nindent 2 -}}
-    nodePort: 30000
   type: NodePort
