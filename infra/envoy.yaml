@@ -6,11 +6,18 @@ spec:
   project: default
   destination:
     server: https://kubernetes.default.svc
-    namespace: envoy-gateway-poc
+    namespace: envoy-gateway
   source:
-    repoURL: https://github.com/zilinjak/k8s-playground-apps.git
-    path: helm/gateway-helm
-    targetRevision: HEAD
+    # repoURL: https://github.com/zilinjak/k8s-playground-apps.git
+    # path: helm/gateway-helm
+    # targetRevision: HEAD
+    helm:
+      values: |
+        
+    repoURL: 'registry-1.docker.io/envoyproxy'
+    chart: gateway-helm
+    path: gateway-helm
+    targetRevision: v0.0.0-latest
   syncPolicy:
     automated:
       prune: true
