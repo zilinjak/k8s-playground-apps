@@ -117,5 +117,8 @@ spec:
                     default_value: 200
                     runtime_key: key_b
             status_code: 406
+            headers_to_add:
+            - key: "foo"
+              value: "bar"
             body:
               inline_string: "could not find what you are looking for"
