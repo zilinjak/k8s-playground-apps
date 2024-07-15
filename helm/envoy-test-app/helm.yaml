@@ -112,10 +112,10 @@ spec:
           - filter:
               status_code_filter:
                 comparison:
-                op: EQ
-                value:
-                  default_value: 200
-                  runtime_key: key_b
+                  op: EQ
+                  value:
+                    default_value: 200
+                    runtime_key: key_b
             status_code: 406
             body:
               inline_string: "could not find what you are looking for"
