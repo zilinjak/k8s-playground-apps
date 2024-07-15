@@ -110,6 +110,13 @@ spec:
         path: "/default_filter_chain/filters/0/typed_config/local_reply_config"
         value:
           mappers:
+          - filter:
+              status_code_filter:
+                comparison:
+                  op: EQ
+                  value:
+                    default_value: 200
+                    runtime_key: key_b
             headers_to_add:
               - header:
                   key: "foo"
