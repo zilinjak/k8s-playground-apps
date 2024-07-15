@@ -16,17 +16,6 @@ spec:
       protocol: HTTP
       port: 4500
 ---
-apiVersion: gateway.networking.k8s.io/v1
-kind: Gateway
-metadata:
-  name: eg2
-spec:
-  gatewayClassName: eg
-  listeners:
-    - name: http
-      protocol: HTTP
-      port: 4501
----
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -87,27 +76,6 @@ metadata:
 spec:
   parentRefs:
     - name: eg
-  hostnames:
-    - localhost
-  rules:
-    - backendRefs:
-        - group: ""
-          kind: Service
-          name: backend
-          port: 3000
-          weight: 1
-      matches:
-        - path:
-            type: PathPrefix
-            value: /
----
-apiVersion: gateway.networking.k8s.io/v1
-kind: HTTPRoute
-metadata:
-  name: backend2
-spec:
-  parentRefs:
-    - name: eg2
   hostnames:
     - localhost
   rules:
