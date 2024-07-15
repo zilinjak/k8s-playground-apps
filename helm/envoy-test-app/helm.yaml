@@ -111,6 +111,7 @@ spec:
         value:
           mappers:
             headers_to_add:
-            - key: "foo"
-              value: "bar"
-  
+              - header:
+                  key: "foo"
+                  value: "bar"
+                append_action: OVERWRITE_IF_EXISTS_OR_ADD
