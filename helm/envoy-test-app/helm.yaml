@@ -90,7 +90,7 @@ spec:
             type: PathPrefix
             value: /
 ---
-apiVersion: gateway.envoyproxy.io/v1alpha1
+apiVersion: gateway.envoyproxy.io/v1
 kind: EnvoyPatchPolicy
 metadata:
   name: custom-response-patch-policy
