@@ -113,7 +113,7 @@ spec:
                 comparison:
                   op: EQ
                   value:
-                    default_value: 200
+                    default_value: 400
                     runtime_key: key_b
             headers_to_add:
               - header:
