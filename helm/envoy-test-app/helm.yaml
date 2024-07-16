@@ -100,6 +100,7 @@ spec:
     group: gateway.networking.k8s.io
     kind: Gateway
     name: eg
+    namespace: apps
   type: JSONPatch
   jsonPatches:
     - type: "type.googleapis.com/envoy.config.listener.v3.Listener"
